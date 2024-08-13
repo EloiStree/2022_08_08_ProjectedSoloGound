@@ -1,0 +1,38 @@
+
+//Time between wave creation under player
+under_TimeBetweenCreationWave:0.1
+
+//Time between wave creation for the tail
+tail_TimeBetweenCreationWave:0.1
+
+//How many item to create per group of pixel under the tail of the player
+tail_itemtocreateperpixelgroup:5
+
+//How many item to create per group of pixel under the player
+under_itemtocreateperpixelgroup:5
+
+//Allows to set how many creation we want per group of pixel  for the pail path
+tail_pixelgroupcount:100
+
+//Allows to set how many creation we want per group of pixel  for the pail path
+under_pixelgroupcount:100
+
+//Set how fast the tail fade if only on 1 white pixel around
+FadeRatioFor1WhitePixel:9
+
+//Set how fast the tail fade if only on 1 white pixel around
+FadeRatioFor3WhitePixel:5
+
+//Set how fast the tail fade if only on 1 white pixel around
+FadeRatioFor6WhitePixel:3
+
+//Set how fast the tail fade if only on 1 white pixel around
+FadeRatioFor7WhitePixel:1
+
+//Set how fast the tail fade if only on 1 white pixel around
+FadeRatioForMostlyWhite:0
+
+//Allows to tweak the speed of the fade on the tail path
+FadeGlobalMultiplicator:1
+
+FadeRatioContinously:0.1

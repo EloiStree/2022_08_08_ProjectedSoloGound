@@ -1,0 +1,10 @@
+{
+  "m_timeAllowedToCheckDisplay": 5,
+  "m_displayWhenCheckingReadOnly": "A //Checking ReadOnly files and folders...",
+  "m_displayWhenCheckingLicense": "B //Checking License validity...",
+  "m_expiredAtSpecificDate": "C //The application license has a end date and you reached it. Please contact your provider if you need a new license.",
+  "m_expiredFromToSpecificDate": "D //The application license has a start and end date. You are too soon for using this application or you reached then max date of the license. Please contact your provider if you need a new license.",
+  "m_someReadOnlyWereModify": "E //Some files and folders are in a read only state. You apparently modified the content of one of them. Please reset the file in it original state or contact your provider.",
+  "m_cheatOnLicenseDetected": "F //We have detected some possible cheat on the license files. Please contact us or restore the folder in their previous state.",
+  "m_cheatOnReadOnlyFilesDetected": "G //We have detected some possible cheat on the Read only files. Please contact us or restore the folder in their previous state."
+}

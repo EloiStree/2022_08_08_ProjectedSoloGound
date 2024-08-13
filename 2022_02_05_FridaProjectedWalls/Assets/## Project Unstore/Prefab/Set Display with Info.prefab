@@ -1,0 +1,142 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2585990733569290266
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3342315992561163688}
+  - component: {fileID: 7938467599736897095}
+  - component: {fileID: 7154214515788086190}
+  - component: {fileID: 1943475173283889272}
+  m_Layer: 0
+  m_Name: Set Display with Info
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3342315992561163688
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2585990733569290266}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 193, y: 154.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7938467599736897095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2585990733569290266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58e7a7aa6ab806046ac41c17511160a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_configurationPath: {fileID: 7154214515788086190}
+  m_defautlValueIfNotExisting:
+    m_timeAllowedToCheckDisplay: 0.1
+    m_displayWhenCheckingReadOnly: Checking ReadOnly files and folders...
+    m_displayWhenCheckingLicense: Checking License validity...
+    m_expiredAtSpecificDate: The application license has a end date and you reached
+      it. Please contact your provider if you need a new license.
+    m_expiredFromToSpecificDate: The application license has a start and end date.
+      You are too soon for using this application or you reached then max date of
+      the license. Please contact your provider if you need a new license.
+    m_someReadOnlyWereModify: Some files and folders are in a read only state. You
+      apparently modified the content of one of them. Please reset the file in it
+      original state or contact your provider.
+    m_cheatOnLicenseDetected: We have detected some possible cheat on the license
+      files. Please contact us or restore the folder in their previous state.
+    m_cheatOnReadOnlyFilesDetected: We have detected some possible cheat on the Read
+      only files. Please contact us or restore the folder in their previous state.
+  m_importedValue:
+    m_timeAllowedToCheckDisplay: 0.1
+    m_displayWhenCheckingReadOnly: 
+    m_displayWhenCheckingLicense: 
+    m_expiredAtSpecificDate: 
+    m_expiredFromToSpecificDate: 
+    m_someReadOnlyWereModify: 
+    m_cheatOnLicenseDetected: 
+    m_cheatOnReadOnlyFilesDetected: 
+  m_displayWhenCheckingReadOnly:
+    m_PersistentCalls:
+      m_Calls: []
+  m_displayWhenCheckingLicense:
+    m_PersistentCalls:
+      m_Calls: []
+  m_expireAtSpecificDate:
+    m_PersistentCalls:
+      m_Calls: []
+  m_expireFromToSpecificDate:
+    m_PersistentCalls:
+      m_Calls: []
+  m_someReadOnlyWereModified:
+    m_PersistentCalls:
+      m_Calls: []
+  m_cheatOnLicenseDetected:
+    m_PersistentCalls:
+      m_Calls: []
+  m_cheatOnReadOnlyDetected:
+    m_PersistentCalls:
+      m_Calls: []
+  m_displayTimeAllowed:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &7154214515788086190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2585990733569290266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0041492741cda94ca7a060a72d29421, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_subfolders:
+    m_path: ReadOnly/App
+  m_fileName:
+    m_fileName: DisplayLockerAndLicenseMessage
+    m_extensionNameWithoutDot: json
+  m_debugPath: 
+--- !u!114 &1943475173283889272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2585990733569290266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10aeac9b3f2f31046afae7c78e3d1bca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_tick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7938467599736897095}
+        m_TargetAssemblyTypeName: SetLockerTextMono, Assembly-CSharp
+        m_MethodName: Refresh
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2

@@ -1,0 +1,58 @@
+
+//Try to import the kinect information from memory
+usekinectplayzoneimport:True
+
+//Put some debug player that are used with qzsd and arrows
+useplayerdebug:False
+
+//Display the kinect point cloud that is imported over the scene to debug
+usedebugkinectpointcloudtexture:True
+
+//If you want you can have the ground wih transparency   0-1
+groundalphapercent:1
+
+//If you want you can have the wall wih transparency 0-1
+wallalphapercent:1
+
+//What is the radius of effect in meter for the fake players or computed player METER
+playerforceradiusmeter:1
+
+//What is the radius effect of the repulsion from kinect pixel METER
+pixelradiusmeter:1.1
+
+//What is the repulsion intensity of the pixel of the kinect 0-1
+pixelforceintensityaspercent:0.95
+
+//Force use to set from intensity to push the object in the scne
+//Not very precise but that the best I could use in waiting of doing better
+repulsionForce:180
+
+//what is the depth, length of the ground zone the player can play from back to forward MM
+grounddepthmm:4000
+
+//what is the wall width from left to right MM
+groundwallwidthmm:5000
+
+//What is the height of the wall MM
+wallheightmm:2800
+
+//what is the resolution width of the screen for the ground PIXEL
+groundwidthresolution:1600
+
+//what is the resolution width of the screen for the wall PIXEL
+wallwidthresolution:1600
+
+//On what screen index do you want the ground to be. (0 1 2)
+groundscreenindex:0
+
+//On what screen index do you want the wall to be. (0 1 2)
+wallscreenindex:1
+
+//Cloud mean you can have 2000000 pixel. So to limit performance how many pixel randomly do you want the app to use to push the object around. 20 ok 100 heavy 200+ risky
+maxpixel:20
+
+//Color of the wall background 0-255 r:g:b
+wallbackgroundcolor:255:255:255:255
+
+//Color of the ground background 0-255 r:g:b
+groundbackgroundcolor:255:255:255:255

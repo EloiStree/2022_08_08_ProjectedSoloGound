@@ -1,0 +1,21 @@
+// Each #kernel tells which function to compile; you can have many kernels
+#pragma kernel CSMain
+
+RWTexture2D<float4> Memory;
+float m_toRemove;
+
+[numthreads(16, 16, 1)]
+void CSMain(uint3 id : SV_DispatchThreadID)
+{
+   //if(Memory[id.xy].x > 0.0 || Memory[id.xy].y > 0.0 || Memory[id.xy].z > 0.0){
+        Memory[id.xy] = float4 (
+            Memory[id.xy].x - m_toRemove,
+            Memory[id.xy].y - m_toRemove,
+            Memory[id.xy].z - m_toRemove,
+            Memory[id.xy].w - m_toRemove);
+        if (Memory[id.xy].x < 0) {
+                Memory[id.xy] = float4(0,0,0,0);
+        }
+
+    //}
+}

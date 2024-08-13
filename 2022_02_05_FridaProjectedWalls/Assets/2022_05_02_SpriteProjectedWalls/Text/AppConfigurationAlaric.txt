@@ -1,0 +1,31 @@
+// ROOM SIZE
+grounddepthmm:2200
+groundwallwidthmm:2500
+wallheightmm:2000
+
+//SCREENS
+groundscreenindex:1
+wallscreenindex:0
+
+// RESOLUTION
+groundwidthresolution:1600
+wallwidthresolution:1600
+
+// BACKGROUNDS
+groundalphapercent:0
+wallalphapercent:0
+wallbackgroundcolor:0:0:0
+groundbackgroundcolor:0:0:0
+
+// PLAYER INTERACTION
+pixelradiusmeter:0.7
+pixelforceintensityaspercent:0.8
+repulsionForce:80
+maxpixel:50
+
+
+// DEBUG MODE
+usekinectplayzoneimport:true
+useplayerdebug:false
+playerforceradiusmeter:1
+usedebugkinectpointcloudtexture:false

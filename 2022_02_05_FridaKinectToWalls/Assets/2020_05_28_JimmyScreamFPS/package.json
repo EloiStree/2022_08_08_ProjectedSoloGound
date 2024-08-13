@@ -1,0 +1,22 @@
+{                                                                                
+  "name": "be.eloistree.jimmyscreamfps",                              
+  "displayName": "Jimmy Scream FPS",                        
+  "version": "0.0.1",                         
+  "unity": "2018.1",                             
+  "unityRelease": "",                             
+  "description": "Just a prefab to hear your game scream like a pig when FPS are under 55-60 FPS.",                         
+  "keywords": ["Script","Tool"],   
+  "relatedPackages":{},     
+  "samples" : [],
+  "author": {
+    "name": "Eloi Strée",
+    "mail": "",
+    "url": "https://github.com/EloiStree"
+  },     
+  "repository":{
+"type":"Git",
+"url":"https://gitlab.com/EloiStree/2020_05_28_JimmyScreamFPS.git",
+"footprint":"",
+"revision":"5655f2840ea30d32403ff3f136141af716f36be2"},     
+  "category": "Script"                   
+} 

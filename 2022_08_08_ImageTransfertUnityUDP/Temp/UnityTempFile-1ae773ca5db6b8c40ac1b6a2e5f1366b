@@ -1,0 +1,527 @@
+/target:library
+/out:Temp/be.eloistree.generaltoolbox.dll
+/nowarn:0169
+/nowarn:0649
+/refout:Temp/be.eloistree.generaltoolbox.dll.ref
+/deterministic
+/debug:portable
+/optimize+
+/nostdlib+
+/preferreduilang:en-US
+/langversion:8.0
+/reference:Library/ScriptAssemblies/UnityEditor.UI.dll
+/reference:Library/ScriptAssemblies/UnityEngine.UI.dll
+/reference:"C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/16.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/Managed/UnityEditor.Graphs.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/PlaybackEngines/MetroSupport/UnityEditor.UWP.Extensions.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll"
+/reference:C:/Users/moi/Desktop/ActiveMe/2022_08_08_ProjectedSoloGound/2022_08_08_ImageTransfertUnityUDP/Q_Texture2DTransfertUDP/Library/PackageCache/com.unity.collab-proxy@1.15.7/Lib/Editor/PlasticSCM/Unity.Plastic.Antlr3.Runtime.dll
+/reference:C:/Users/moi/Desktop/ActiveMe/2022_08_08_ProjectedSoloGound/2022_08_08_ImageTransfertUnityUDP/Q_Texture2DTransfertUDP/Library/PackageCache/com.unity.collab-proxy@1.15.7/Lib/Editor/PlasticSCM/Unity.Plastic.Newtonsoft.Json.dll
+/reference:C:/Users/moi/Desktop/ActiveMe/2022_08_08_ProjectedSoloGound/2022_08_08_ImageTransfertUnityUDP/Q_Texture2DTransfertUDP/Library/PackageCache/com.unity.collab-proxy@1.15.7/Lib/Editor/PlasticSCM/log4netPlastic.dll
+/reference:C:/Users/moi/Desktop/ActiveMe/2022_08_08_ProjectedSoloGound/2022_08_08_ImageTransfertUnityUDP/Q_Texture2DTransfertUDP/Library/PackageCache/com.unity.collab-proxy@1.15.7/Lib/Editor/PlasticSCM/unityplastic.dll
+/reference:C:/Users/moi/Desktop/ActiveMe/2022_08_08_ProjectedSoloGound/2022_08_08_ImageTransfertUnityUDP/Q_Texture2DTransfertUDP/Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0/Runtime/Newtonsoft.Json.dll
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEditor.CoreModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEditor.GraphViewModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEditor.PackageManagerUIModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEditor.SceneTemplateModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEditor.UIElementsModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEditor.UIElementsSamplesModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEditor.UIServiceModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEditor.UnityConnectModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEditor.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.ARModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.AccessibilityModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.AndroidJNIModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.AnimationModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.AssetBundleModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.AudioModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.ClothModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.ClusterInputModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.ClusterRendererModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.CoreModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.CrashReportingModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.DSPGraphModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.DirectorModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.GIModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.GameCenterModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.GridModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.HotReloadModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.IMGUIModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.ImageConversionModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.InputLegacyModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.InputModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.JSONSerializeModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.LocalizationModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.ParticleSystemModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.PerformanceReportingModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.Physics2DModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.PhysicsModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.ProfilerModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.ScreenCaptureModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.SharedInternalsModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteMaskModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteShapeModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.StreamingModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.SubstanceModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.SubsystemsModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.TLSModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.TerrainModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.TerrainPhysicsModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.TextCoreModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.TextRenderingModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.TilemapModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.UIElementsModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.UIElementsNativeModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.UIModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.UNETModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.UmbraModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityAnalyticsModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityConnectModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityCurlModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityTestProtocolModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestAssetBundleModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestAudioModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestTextureModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestWWWModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.VFXModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.VRModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.VehiclesModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.VideoModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.VirtualTexturingModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.WindModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.XRModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/NetStandard/Extensions/2.0.0/System.Numerics.Vectors.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/NetStandard/Extensions/2.0.0/System.Runtime.InteropServices.WindowsRuntime.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.ComponentModel.Composition.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Core.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Data.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Drawing.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.IO.Compression.FileSystem.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Net.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Numerics.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Runtime.Serialization.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.ServiceModel.Web.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Transactions.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Web.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Windows.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Linq.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/mscorlib.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/Microsoft.Win32.Primitives.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.AppContext.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Collections.Concurrent.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Collections.NonGeneric.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Collections.Specialized.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Collections.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.ComponentModel.EventBasedAsync.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.ComponentModel.Primitives.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.ComponentModel.TypeConverter.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.ComponentModel.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Console.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Data.Common.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.Contracts.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.Debug.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.FileVersionInfo.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.Process.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.StackTrace.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.TextWriterTraceListener.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.Tools.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.TraceSource.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.Tracing.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Drawing.Primitives.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Dynamic.Runtime.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Globalization.Calendars.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Globalization.Extensions.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Globalization.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.Compression.ZipFile.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.Compression.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.FileSystem.DriveInfo.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.FileSystem.Primitives.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.FileSystem.Watcher.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.FileSystem.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.IsolatedStorage.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.MemoryMappedFiles.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.Pipes.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.UnmanagedMemoryStream.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Linq.Expressions.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Linq.Parallel.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Linq.Queryable.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Linq.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.Http.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.NameResolution.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.NetworkInformation.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.Ping.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.Primitives.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.Requests.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.Security.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.Sockets.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.WebHeaderCollection.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.WebSockets.Client.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.WebSockets.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.ObjectModel.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Reflection.Extensions.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Reflection.Primitives.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Reflection.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Resources.Reader.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Resources.ResourceManager.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Resources.Writer.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.CompilerServices.VisualC.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Extensions.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Handles.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.InteropServices.RuntimeInformation.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.InteropServices.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Numerics.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Serialization.Formatters.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Serialization.Json.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Serialization.Primitives.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Serialization.Xml.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Claims.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Cryptography.Algorithms.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Cryptography.Csp.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Cryptography.Encoding.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Cryptography.Primitives.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Cryptography.X509Certificates.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Principal.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.SecureString.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Text.Encoding.Extensions.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Text.Encoding.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Text.RegularExpressions.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.Overlapped.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.Tasks.Parallel.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.Tasks.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.Thread.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.ThreadPool.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.Timer.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.ValueTuple.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Xml.ReaderWriter.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Xml.XDocument.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Xml.XPath.XDocument.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Xml.XPath.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Xml.XmlDocument.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Xml.XmlSerializer.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll"
+/define:CSHARP_7_3_OR_NEWER
+/define:CSHARP_7_OR_LATER
+/define:DEBUG
+/define:ENABLE_AR
+/define:ENABLE_AUDIO
+/define:ENABLE_BURST_AOT
+/define:ENABLE_CACHING
+/define:ENABLE_CLOTH
+/define:ENABLE_CLOUD_LICENSE
+/define:ENABLE_CLOUD_SERVICES
+/define:ENABLE_CLOUD_SERVICES_ADS
+/define:ENABLE_CLOUD_SERVICES_ANALYTICS
+/define:ENABLE_CLOUD_SERVICES_BUILD
+/define:ENABLE_CLOUD_SERVICES_COLLAB
+/define:ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS
+/define:ENABLE_CLOUD_SERVICES_CRASH_REPORTING
+/define:ENABLE_CLOUD_SERVICES_PURCHASING
+/define:ENABLE_CLOUD_SERVICES_UNET
+/define:ENABLE_CLOUD_SERVICES_USE_WEBREQUEST
+/define:ENABLE_CLUSTERINPUT
+/define:ENABLE_CLUSTER_SYNC
+/define:ENABLE_CRUNCH_TEXTURE_COMPRESSION
+/define:ENABLE_CUSTOM_RENDER_TEXTURE
+/define:ENABLE_DIRECTOR
+/define:ENABLE_DIRECTOR_AUDIO
+/define:ENABLE_DIRECTOR_TEXTURE
+/define:ENABLE_EDITOR_HUB_LICENSE
+/define:ENABLE_EVENT_QUEUE
+/define:ENABLE_LEGACY_INPUT_MANAGER
+/define:ENABLE_LOCALIZATION
+/define:ENABLE_LZMA
+/define:ENABLE_MANAGED_ANIMATION_JOBS
+/define:ENABLE_MANAGED_AUDIO_JOBS
+/define:ENABLE_MANAGED_JOBS
+/define:ENABLE_MANAGED_TRANSFORM_JOBS
+/define:ENABLE_MANAGED_UNITYTLS
+/define:ENABLE_MICROPHONE
+/define:ENABLE_MONO
+/define:ENABLE_MONO_BDWGC
+/define:ENABLE_MOVIES
+/define:ENABLE_MULTIPLE_DISPLAYS
+/define:ENABLE_NETWORK
+/define:ENABLE_OUT_OF_PROCESS_CRASH_HANDLER
+/define:ENABLE_PHYSICS
+/define:ENABLE_PROFILER
+/define:ENABLE_RUNTIME_GI
+/define:ENABLE_SCRIPTING_GC_WBARRIERS
+/define:ENABLE_SPRITES
+/define:ENABLE_TERRAIN
+/define:ENABLE_TEXTURE_STREAMING
+/define:ENABLE_TILEMAP
+/define:ENABLE_TIMELINE
+/define:ENABLE_UNET
+/define:ENABLE_UNITYEVENTS
+/define:ENABLE_UNITYWEBREQUEST
+/define:ENABLE_UNITY_COLLECTIONS_CHECKS
+/define:ENABLE_VIDEO
+/define:ENABLE_VIRTUALTEXTURING
+/define:ENABLE_VR
+/define:ENABLE_WEBCAM
+/define:ENABLE_WEBSOCKET_CLIENT
+/define:ENABLE_WEBSOCKET_HOST
+/define:ENABLE_WWW
+/define:GFXDEVICE_WAITFOREVENT_MESSAGEPUMP
+/define:INCLUDE_DYNAMIC_GI
+/define:NET_STANDARD_2_0
+/define:PLATFORM_ARCH_64
+/define:PLATFORM_STANDALONE
+/define:PLATFORM_STANDALONE_WIN
+/define:PLATFORM_SUPPORTS_MONO
+/define:PLATFORM_UPDATES_TIME_OUTSIDE_OF_PLAYER_LOOP
+/define:RENDER_SOFTWARE_CURSOR
+/define:SCENE_TEMPLATE_MODULE
+/define:TRACE
+/define:UNITY_2017_1_OR_NEWER
+/define:UNITY_2017_2_OR_NEWER
+/define:UNITY_2017_3_OR_NEWER
+/define:UNITY_2017_4_OR_NEWER
+/define:UNITY_2018_1_OR_NEWER
+/define:UNITY_2018_2_OR_NEWER
+/define:UNITY_2018_3_OR_NEWER
+/define:UNITY_2018_4_OR_NEWER
+/define:UNITY_2019_1_OR_NEWER
+/define:UNITY_2019_2_OR_NEWER
+/define:UNITY_2019_3_OR_NEWER
+/define:UNITY_2019_4_OR_NEWER
+/define:UNITY_2020
+/define:UNITY_2020_1_OR_NEWER
+/define:UNITY_2020_2_OR_NEWER
+/define:UNITY_2020_3
+/define:UNITY_2020_3_27
+/define:UNITY_2020_3_OR_NEWER
+/define:UNITY_5_3_OR_NEWER
+/define:UNITY_5_4_OR_NEWER
+/define:UNITY_5_5_OR_NEWER
+/define:UNITY_5_6_OR_NEWER
+/define:UNITY_64
+/define:UNITY_ASSERTIONS
+/define:UNITY_EDITOR
+/define:UNITY_EDITOR_64
+/define:UNITY_EDITOR_WIN
+/define:UNITY_INCLUDE_TESTS
+/define:UNITY_STANDALONE
+/define:UNITY_STANDALONE_WIN
+/define:UNITY_TEAM_LICENSE
+/define:USE_SEARCH_ENGINE_API
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\Boolean\E_BooleanUtility.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\ChangeListener\BooleanChangeListener.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\Delta\Time\DeltaDateTime.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\Delta\Time\DeltaGameTime.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\Display\DisplayScript.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\Documentation\DeveloperNoteMono.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\Documentation\DocCodeFoundOnWebMono.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\Documentation\DocWebLinkMono.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\DragDropPlayerPerfs\TransformPlayerPrefsMono.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\Drawing\LogDraw_PointToPoint.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\E_ActionShortcut.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\E_BeepUtility.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\E_ClassicAndCacheBinUtility.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\E_CodeTag.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\E_ColorUtility.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\E_CsvUtility.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\E_DateTime.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\E_DebugLog.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\E_DirectoryExplorationUtility.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\E_DrawingUtility.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\E_EnumUtility.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\E_FilePathUtility.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\E_GeneralUtility.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\E_InCodeNameCollection.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\E_LaunchWindowBat.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\E_PerfEstimationUtility.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\E_PrimitiveBoolUtility\E_PrimitiveBoolUtility.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\E_PrimitiveBoolUtility\Exp_EncodeDecodeIntBytes.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\E_PrimitiveUnityEvent.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\E_QuickCoroutineUtility.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\E_RandomTextUtility.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\E_RandomUtility.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\E_ReflectionCS.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\E_RegexUtility.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\E_RelocationUtility.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\E_SearchInSceneUtility.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\E_SoundPingUtility.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\E_String256Utility.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\E_StringCompression.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\E_StringUtility.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\E_Texture2D.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\E_Texture2DColorUtility.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\E_Texture2DColorUtility\CropColorsTool.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\E_Texture2DColorUtility\KeepAndBanColorTool.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\E_Texture2DColorUtility\PixelPointDL2TR.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\E_Texture2DColorUtility\RemoveBlackPixelOnBorder.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\E_Texture2DColorUtility\Selection\ColorMagicSelectionTool.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\E_ThrowException.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\E_WindowEasyPrint.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\FairRandom.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\FromWeb\CanvasScreenShot.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\FromWeb\SceneLinkedSMB.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\FromWeb\TextureScale.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\Generic\GenericClampHistory.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\GenericSingletonOfMono.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\MustHave\AvoidSleepingMono.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\MustHave\CameraDebugDrawLines.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\MustHave\CreateAroundExeStructure\CreateReadMeIfNotExisting.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\MustHave\DebugDrawCameraFieldOfViewMono.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\MustHave\RunOnlyInEditorMono.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\MustHave\SetGameAsInvariantCulture.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\MustHave\SetGlobalGameVolumeMono.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\NamedPrimitive\PercentN1P1.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\NamedPrimitive\Pourcent01.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\NamedPrimitive\Pourcent01Range.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\OpenUrlMono.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\Parser\Parser_TextToColorMono.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\Parser\PrimitiveToTextRelayMono.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\Parser\TextToPrimitiveRelayMono.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\PerformanceCheckScripts\PerCheckCompareUnityEventMono.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\PerformanceCheckScripts\PerfCheckCompareDelegateMono.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\PerformanceCheckScripts\PerfCheckUnityEventMono.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\QuickMonoScript\ApplicationBasicActionsMono.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\QuickMonoScript\AwakeTick.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\QuickMonoScript\ContinusTick.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\QuickMonoScript\DelayTick.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\QuickMonoScript\DelayTicksMono.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\QuickMonoScript\FramesTick.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\QuickMonoScript\GoodOldClassic\DontDestroyOnLoadGameObjectMono.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\QuickMonoScript\GoodOldClassic\SceneLoaderMono.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\QuickMonoScript\GoodOldClassic\ThereMustBeOnlyOneMono.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\QuickMonoScript\MoveAndRotate\QuickRotateMono.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\QuickMonoScript\OnApplicationQuitTick.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\QuickMonoScript\OnDisEnableTick.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\QuickMonoScript\OnLevelLoadTick.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\QuickMonoScript\RandomTick.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\QuickMonoScript\SceneSwitcherMono.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\QuickMonoScript\StartTick.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\QuickMonoScript\TimeOfDayTick\OverwatchDateTimeEvent.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\QuickMonoScript\TimeOfDayTick\TimeOfDayTick_AtSpecificDate.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\QuickMonoScript\TimeOfDayTick\TimeOfDayTick_AtSpecificTime.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\QuickMonoScript\TimeOfDayTick\TimeOfDayTick_EveryHour.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\QuickMonoScript\TimeOfDayTick\TimeOfDayTick_EveryMinute.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\QuickMonoScript\UIInputFieldPlayerPrefs.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\QuickMonoScript\UIPlayerPrefs\AbstrectUIPlayerPrefs.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\QuickMonoScript\UnityKeyboardTick.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\QuickMonoScript\UnityMethodesTick.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\Relay\TextureRelayMono.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\SetTransparentOfRendererMono.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\SingletonStopWatch\StopWatchSingletonMono.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\SmallTools.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\Sound\OscillatorMono.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\TDD\TDD_Oscillation.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\TDD\TDD_Relocation.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\TagScript\NameIdRefTag.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\TagScript\TagMono\ToCodeLaterTagMono.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\ThreadDateTimeActionQueue\ThreadQueueDateTimeCallMono.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\ThreadDateTimeActionQueue\ZhuLiDoTheThing.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\TrustMeBroExceptionBase.cs
+"Assets\2021_10_03_EloiGeneralToolbox\Runtime\UI COnvertion\Convert_JsonFromToObject.cs"
+"Assets\2021_10_03_EloiGeneralToolbox\Runtime\UI COnvertion\Convert_PrimitiveToString.cs"
+"Assets\2021_10_03_EloiGeneralToolbox\Runtime\UI COnvertion\Convert_StringToPrimitive.cs"
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\UIPlus\UISet_TextAppend.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\UIPlus\UISet_TextAppendMaxLine.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\Unstore\AFK\AFKDetectionMono.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\Unstore\AbstractFileConnectionMono.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\Unstore\AbstractRootTransformMono.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\Unstore\AvoidStreamAndGitKeyAccident\AbstractImportantStringMono.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\Unstore\AvoidStreamAndGitKeyAccident\FirstAvailableImportantStringMono.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\Unstore\AvoidStreamAndGitKeyAccident\FromFileImportantStringMono.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\Unstore\AvoidStreamAndGitKeyAccident\LoadOnlyOnceImportantStringMono.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\Unstore\AvoidStreamAndGitKeyAccident\UnprotectedEditorImportantStringMono.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\Unstore\DebugLogMono.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\Unstore\DebugLogMono1.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\Unstore\DebugTimeHistoryLogMono.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\Unstore\DefaultDataPathStorageMono.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\Unstore\DefaultDirectoryInDataPathStorageMono.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\Unstore\DefaultFileInNearExeDataPathStorageMono.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\Unstore\Destroy\AbstractDestroyManagerMono.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\Unstore\Destroy\DefaultDestroyManagerMono.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\Unstore\DirectDirectoryPathMono.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\Unstore\DirectFilePathMono.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\Unstore\DirectOrRelativeDirectoryPathMono.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\Unstore\DirectOrRelativeFilePathMono.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\Unstore\DragAbleNameId\StringIdScriptable.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\Unstore\ExportFileByOverridingMono.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\Unstore\ExportTextureAsFileMono.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\Unstore\ExtractTexture\ExtractTexture2DAsRenderTextureMono.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\Unstore\ExtractTexture\ExtractTexture2DAsScreenshotImageMono.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\Unstore\ExtractTexture\ExtractTexture2DFromCameraImageMono.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\Unstore\FadeInOutControllerMono.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\Unstore\FileAndFolder\FilesSizeRangeSearchMono.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\Unstore\FileAndFolder\GitDirectorySearchMono.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\Unstore\FileAndFolder\MaxFileNameSearchMono.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\Unstore\FileExistingKeyToActionsMono.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\Unstore\FileImport\ImportOrCreateTextFileMono.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\Unstore\FileImport_FromAbstractPathMono.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\Unstore\FrameRateSetter.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\Unstore\GroupID\AbstractTextureGroupIDCodeMono.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\Unstore\GroupID\GroupID2Texture2DCollectionMono.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\Unstore\GroupID\RefreshTexture2DWithGroupIdMono.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\Unstore\GroupIdStringSourceMono.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\Unstore\InEditorFolderPathMono.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\Unstore\InverseBoolRelayMono.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\Unstore\InverseBoolStateRelayMono.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\Unstore\JsonFileDefaultOrImportAccess.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\Unstore\LifeTimeMono.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\Unstore\MoveDetector\AbstractIsMovingDetectionMono.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\Unstore\MoveDetector\DeathZoneMotionTriggerMono.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\Unstore\MoveDetector\DefaultIsMovingDetectionMono.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\Unstore\OnTriggerCollisionDetectedMono.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\Unstore\OverwatchInternetAccessMono.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\Unstore\PlatformSpecific\DeveloperModeMono.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\Unstore\PlatformSpecific\OnlyInDeveloperModeMono.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\Unstore\PlatformSpecific\OnlyInEditorMono.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\Unstore\Random\RandomEnablerMono.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\Unstore\Random\RandomEnablerSetFromStatic.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\Unstore\RandomTextPusherMono.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\Unstore\RelayFilter\DefaultStringFilterToUnityEvent.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\Unstore\RelayFilter\GroupStringFilterFromChildren.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\Unstore\RelayFilter\StringRelayMono.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\Unstore\RootFolderPerDayStorageMono.cs
+"Assets\2021_10_03_EloiGeneralToolbox\Runtime\Unstore\Singleton\Static Event Communication\MonoStaticEvent.cs"
+"Assets\2021_10_03_EloiGeneralToolbox\Runtime\Unstore\Singleton\Static Event Communication\OnTheGoMonoStaticEvent.cs"
+"Assets\2021_10_03_EloiGeneralToolbox\Runtime\Unstore\Singleton\Static Event Communication\PushInMonoStaticEvent.cs"
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\Unstore\StringHistoryDebugMono.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\Unstore\Texture2DToMaterialMono.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\Unstore\Texture2DToRendererMono.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\Unstore\Tick\CancelableCountdownTick.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\Unstore\Tick\CoroutineLoopTick.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\Unstore\Tick\EndOfFrameTick.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\Unstore\Tick\LoopingTickBean.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\Unstore\Tick\RequestToNextUpdateTick.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\Unstore\Tick\TickDelegateEvent.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\Unstore\TimeAccess\GetTimeMono.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\Unstore\TimeAccess\LevelTimeGetTimeMono.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\Unstore\UI\CoroutineHolder\CoroutineActiveHolder.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\Unstore\UI\GoodOldClassic\UI_DiffuseInputStringOnAction.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\Unstore\UI\PageManagment\UI_EnumPagesManagerStringId.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\Unstore\UI\PageManagment\UI_EnumPagesManagerStringNavigation.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\Unstore\UI\PageManagment\UI_PageCyclingSwitcher.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\Unstore\UI\UITool\AbstractUI2Display.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\Unstore\UI\UITool\UI2Display_ActivateGameObjectsMirror.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\Unstore\UI\UITool\UI2Display_ActivateGameobjectsComplete.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\Unstore\UI\UITool\UI2Display_NamedPagesGroup.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\Unstore\UI\UITool\UI2Display_ThroughUnityEvent.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\Unstore\UIImagePlus.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\Unstore\UIInputFieldPlus.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\Unstore\UIRawImagePlus.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\Unstore\UIRawImageWithRatioMono.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\Unstore\UI_RelayInputFieldOnValidate.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\Unstore\UnityEventMono.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\Unstore\UnityMouseTick.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\Unstore\UnityWindowPrinterMono.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\Unstore\WaitConditionToContinue\AbstractObserverToWaitCondition.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\Unstore\WaitConditionToContinue\WaitConditionToContinueWithDelayAlternative.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\Unstore\WaitConditionToContinue\WaitConditionsToContinueTriggerOnce.cs
+Assets\2021_10_03_EloiGeneralToolbox\Runtime\Unstore\WebCamToRenderTexture.cs

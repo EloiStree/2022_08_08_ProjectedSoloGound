@@ -1,0 +1,108 @@
+// Each #kernel tells which function to compile; you can have many kernels
+#pragma kernel CSMain
+// Create a RenderTexture with enableRandomWrite flag and set it
+// with cs.SetTexture
+int m_textureWidth;
+int m_textureHeight;
+RWTexture2D<float4> Result;
+  
+
+//  //https://math.stackexchange.com/questions/13404/mapping-irregular-quadrilateral-to-a-rectangle
+float2 m_p0DL;
+float2 m_p1DR;
+float2 m_p2TR;
+float2 m_p3TL;
+float m_ignoreLeft;
+float m_ignoreRight;
+float m_ignoreTop;
+float m_ignoreDown;
+ float m_maxRange = 100000;
+ float m_ignoreMinHeight;
+ float m_ignoreMaxHeight;
+
+ int m_inverseHorizontal;
+ int m_inverseVertical;
+
+ RWStructuredBuffer<float3> m_localPointsArray;
+
+
+ float2 PerpendicularClockwise(float2 vector2)
+{
+    return float2(vector2.y, -vector2.x);
+}
+
+ float2 PerpendicularCounterClockwise(float2 vector2)
+{
+    return float2(-vector2.y, vector2.x);
+}
+
+ float DotProduct(float2 a, float2 b) {
+     return dot(a,b);
+ 
+ }
+
+
+
+[numthreads(64,1,1)]
+void CSMain (uint3 id : SV_DispatchThreadID)
+{
+    m_maxRange = 100000;
+
+    float2 m_p = float2(m_localPointsArray[id.x].x, m_localPointsArray[id.x].z);
+    if(m_p.x < m_ignoreLeft
+        || m_p.y < m_ignoreDown
+        || m_p.x > m_ignoreRight
+        || m_p.y > m_ignoreTop){
+        m_localPointsArray[id.x] = float3(-100, -100, -100);
+        return;
+    }
+    if (
+        //isinf(m_localPointsArray[id.x].x) ||
+        //isnan(m_localPointsArray[id.x].x) ||
+        m_p.x < - m_maxRange
+        || m_p.y < - m_maxRange
+        || m_p.x > m_maxRange
+        || m_p.y > m_maxRange) {
+
+        m_localPointsArray[id.x] = float3(-1000, -1000, -1000);
+        return;
+    }
+
+    //float2 m_p = float2(m_localPointsArray[id.x].x, m_localPointsArray[id.x].y);
+     float2 m_n0 = PerpendicularClockwise(m_p3TL - m_p0DL);
+     float2 m_n1 = PerpendicularCounterClockwise(m_p1DR - m_p0DL);
+     float2 m_n2 = PerpendicularCounterClockwise(m_p2TR - m_p1DR);
+     float2 m_n3 = PerpendicularClockwise(m_p2TR - m_p3TL);
+
+     float dU0 = DotProduct((m_p - m_p0DL), m_n0);
+     float dV0 = DotProduct((m_p - m_p0DL), m_n1);
+     float dU1 = DotProduct((m_p - m_p2TR), m_n2);
+     float dV1 = DotProduct((m_p - m_p3TL), m_n3);
+
+     float u = (dU0 + dU1 == 0.0) ? 0.0 : dU0 / (dU0 + dU1); 
+     float v = (dV0 + dV1 == 0.0) ? 0.0 : dV0 / (dV0 + dV1);
+
+     int m_x = (int)((u * m_textureWidth));
+     int m_y = (int)((v * m_textureHeight));
+     if (m_x < 0 || m_x >= m_textureWidth || m_y < 0 || m_y >= m_textureHeight) {
+
+         m_localPointsArray[id.x] = float3(-2000, -2000, -2000);
+         return;
+     }
+     if(m_localPointsArray[id.x].y < m_ignoreMinHeight
+         || m_localPointsArray[id.x].y > m_ignoreMaxHeight) {
+
+         m_localPointsArray[id.x] = float3(-3000, -3000, -3000);
+        return;
+     }
+
+     if (m_inverseHorizontal == 1)
+         m_x = m_textureWidth - 1 - m_x;
+     if (m_inverseVertical == 1)
+         m_y = m_textureHeight - 1 - m_y;
+
+     uint2 index = uint2(m_x, m_y);
+     Result[index] = float4(1,1,1,1);
+     m_localPointsArray[id.x] = float3(m_p.x, m_localPointsArray[id.x].y, m_p.y);
+
+}

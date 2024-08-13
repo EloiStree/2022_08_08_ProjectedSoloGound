@@ -1,0 +1,505 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6370745163653206035
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6370745163653206032}
+  m_Layer: 0
+  m_Name: IsLock
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &6370745163653206032
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6370745163653206035}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 6370745165099404696}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &6370745164037900974
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6370745164037900975}
+  - component: {fileID: 6370745164037900972}
+  m_Layer: 0
+  m_Name: Directory Path Image Texture
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6370745164037900975
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6370745164037900974}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 6370745165099404696}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6370745164037900972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6370745164037900974}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6dce9cb3cd9b2b4aa806382b8594c03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_subfolders:
+    m_path: ReadOnly/ImportTexture
+  m_debugPath: C:\Users\moi\Desktop\ActiveMe\2022_05_12_ProjectLocker\ProjectLocker/ReadOnly/ImportTexture
+--- !u!1 &6370745164128122632
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6370745164128122646}
+  - component: {fileID: 6370745164128122633}
+  m_Layer: 0
+  m_Name: Directory Path Read Only folder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6370745164128122646
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6370745164128122632}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 6370745165099404696}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6370745164128122633
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6370745164128122632}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6dce9cb3cd9b2b4aa806382b8594c03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_subfolders:
+    m_path: ReadOnly
+  m_debugPath: C:\Users\moi\Desktop\ActiveMe\2022_05_12_ProjectLocker\ProjectLocker/ReadOnly
+--- !u!1 &6370745165020038058
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6370745165020038059}
+  - component: {fileID: 6370745165020038056}
+  m_Layer: 0
+  m_Name: Directory Path File License Date
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6370745165020038059
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6370745165020038058}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 6370745165099404696}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6370745165020038056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6370745165020038058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cc1672642b70554590ab02ec324da91, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_note: Is somewhere else
+  m_author: 
+--- !u!1 &6370745165047266208
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6370745165047266222}
+  - component: {fileID: 6370745165047266209}
+  m_Layer: 0
+  m_Name: ProjectRoot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6370745165047266222
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6370745165047266208}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 6370745165099404696}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6370745165047266209
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6370745165047266208}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ca80fa6d7964a3499a002db547fe5d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_debug: C:/Users/moi/Desktop/ActiveMe/2022_05_12_ProjectLocker/ProjectLocker/Assets/..
+--- !u!1 &6370745165099404698
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6370745165099404696}
+  - component: {fileID: 6370745165099404699}
+  - component: {fileID: 6370745165099404697}
+  - component: {fileID: 426795807}
+  m_Layer: 0
+  m_Name: Locker File And Folder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6370745165099404696
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6370745165099404698}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 6370745163653206032}
+  - {fileID: 6370745165047266222}
+  - {fileID: 6370745165377760200}
+  - {fileID: 6370745164037900975}
+  - {fileID: 6370745165020038059}
+  - {fileID: 6370745164128122646}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6370745165099404699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6370745165099404698}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 310929a8350d8134db7e4932cc71e4b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_isValidePush:
+    m_valueEvent:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 6370745165099404697}
+          m_TargetAssemblyTypeName: Eloi.InverseBoolRelayMono, be.eloistree.generaltoolbox
+          m_MethodName: PushBoolean
+          m_Mode: 0
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 1
+        - m_Target: {fileID: 6370745163653206035}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 0
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    m_onEvent:
+      m_PersistentCalls:
+        m_Calls: []
+    m_offEvent:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: DelayTick, be.eloistree.generaltoolbox
+          m_MethodName: LaunchDelayedTick
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  m_unityTrackInfo:
+    m_root: {fileID: 6370745165047266209}
+    m_files:
+      m_filesPath: []
+    m_directories:
+      m_directectoriesPath:
+      - {fileID: 6370745165377760201}
+      - {fileID: 6370745164037900972}
+      - {fileID: 6370745164128122633}
+  m_searchFolderOption: 1
+  m_playerPerfsKey: LockerDefault
+  m_current:
+    m_files:
+      m_lockSource:
+        m_filesTracked:
+          m_files: []
+        m_textUsed: 
+        m_SHA256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+    m_directories:
+      m_lockSource:
+        m_filesTracked:
+          m_files:
+          - m_relativePath: ReadOnly/ImportBackground/a465wGXB_700w_0.jpg
+            m_fileSize: 55165
+            m_content: 
+          - m_relativePath: ReadOnly/ImportBackground/a7PM5B5G_700w_0.jpg
+            m_fileSize: 28511
+            m_content: 
+          - m_relativePath: "ReadOnly/ImportBackground/Capture d\u2019\xE9cran 2022-04-25
+              030718.png"
+            m_fileSize: 102847
+            m_content: 
+          - m_relativePath: ReadOnly/ImportTexture/ah-ah-ah-you-didnt-say-the-magic-word.jpg
+            m_fileSize: 207171
+            m_content: 
+          - m_relativePath: ReadOnly/ImportTexture/BTMbR7.png
+            m_fileSize: 285888
+            m_content: 
+          - m_relativePath: ReadOnly/License.json
+            m_fileSize: 140
+            m_content: "{\n    \"m_year\": 2022,\n    \"m_month_1_12\": 5,\n    \"m_day_1_31\":
+              15,\n    \"m_hour_0_23\": 20,\n    \"m_minute_0_59\": 59,\n    \"m_second_0_59\":
+              25\n}"
+          - m_relativePath: ReadOnly/Test.txt
+            m_fileSize: 1
+            m_content: D
+        m_textUsed: "ReadOnly/ImportBackground/a465wGXB_700w_0.jpg_55165\r\nReadOnly/ImportBackground/a7PM5B5G_700w_0.jpg_28511\r\nReadOnly/ImportBackground/Capture
+          d\u2019\xE9cran 2022-04-25 030718.png_102847\r\nReadOnly/ImportTexture/ah-ah-ah-you-didnt-say-the-magic-word.jpg_207171\r\nReadOnly/ImportTexture/BTMbR7.png_285888\r\nReadOnly/License.json_140\r\n{\n   
+          \"m_year\": 2022,\n    \"m_month_1_12\": 5,\n    \"m_day_1_31\": 15,\n   
+          \"m_hour_0_23\": 20,\n    \"m_minute_0_59\": 59,\n    \"m_second_0_59\":
+          25\n}\r\nReadOnly/Test.txt_1\r\nD\r\n"
+        m_SHA256: d4330f6d7ce46cc8e09ed75393ebac2500a0575d017fcd024eebb6c49bb8476a
+  m_lockedInfo:
+    m_files:
+      m_lockSource:
+        m_filesTracked:
+          m_files: []
+        m_textUsed: 
+        m_SHA256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+    m_directories:
+      m_lockSource:
+        m_filesTracked:
+          m_files:
+          - m_relativePath: ReadOnly/ImportBackground/a465wGXB_700w_0.jpg
+            m_fileSize: 55165
+            m_content: 
+          - m_relativePath: ReadOnly/ImportBackground/a7PM5B5G_700w_0.jpg
+            m_fileSize: 28511
+            m_content: 
+          - m_relativePath: "ReadOnly/ImportBackground/Capture d\u2019\xE9cran 2022-04-25
+              030718.png"
+            m_fileSize: 102847
+            m_content: 
+          - m_relativePath: ReadOnly/ImportTexture/ah-ah-ah-you-didnt-say-the-magic-word.jpg
+            m_fileSize: 207171
+            m_content: 
+          - m_relativePath: ReadOnly/ImportTexture/BTMbR7.png
+            m_fileSize: 285888
+            m_content: 
+          - m_relativePath: ReadOnly/License.json
+            m_fileSize: 140
+            m_content: "{\n    \"m_year\": 2022,\n    \"m_month_1_12\": 5,\n    \"m_day_1_31\":
+              15,\n    \"m_hour_0_23\": 20,\n    \"m_minute_0_59\": 59,\n    \"m_second_0_59\":
+              25\n}"
+          - m_relativePath: ReadOnly/Test.txt
+            m_fileSize: 1
+            m_content: D
+        m_textUsed: "ReadOnly/ImportBackground/a465wGXB_700w_0.jpg_55165\r\nReadOnly/ImportBackground/a7PM5B5G_700w_0.jpg_28511\r\nReadOnly/ImportBackground/Capture
+          d\u2019\xE9cran 2022-04-25 030718.png_102847\r\nReadOnly/ImportTexture/ah-ah-ah-you-didnt-say-the-magic-word.jpg_207171\r\nReadOnly/ImportTexture/BTMbR7.png_285888\r\nReadOnly/License.json_140\r\n{\n   
+          \"m_year\": 2022,\n    \"m_month_1_12\": 5,\n    \"m_day_1_31\": 15,\n   
+          \"m_hour_0_23\": 20,\n    \"m_minute_0_59\": 59,\n    \"m_second_0_59\":
+          25\n}\r\nReadOnly/Test.txt_1\r\nD\r\n"
+        m_SHA256: d4330f6d7ce46cc8e09ed75393ebac2500a0575d017fcd024eebb6c49bb8476a
+  m_isLockerSaved: 0
+  m_debugPlayerPrefSaved: 
+--- !u!114 &6370745165099404697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6370745165099404698}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b787d51985499f4d9784b1f4752d484, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_inverseValue:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &426795807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6370745165099404698}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10aeac9b3f2f31046afae7c78e3d1bca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_tick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6370745165099404699}
+        m_TargetAssemblyTypeName: Locker_FileAndfolderReadOnly, Assembly-CSharp
+        m_MethodName: RefreshCheckThenPushValidity
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!1 &6370745165377760203
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6370745165377760200}
+  - component: {fileID: 6370745165377760201}
+  m_Layer: 0
+  m_Name: Directory Path Image Background
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6370745165377760200
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6370745165377760203}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 6370745165099404696}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6370745165377760201
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6370745165377760203}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6dce9cb3cd9b2b4aa806382b8594c03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_subfolders:
+    m_path: ReadOnly/ImportBackground
+  m_debugPath: C:\Users\moi\Desktop\ActiveMe\2022_05_12_ProjectLocker\ProjectLocker/ReadOnly/ImportBackground

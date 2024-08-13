@@ -1,0 +1,4 @@
+# Starting compiling be.eloistree.int32bit2udpva1.dll
+C:\Program Files\Unity\Hub\Editor\2020.3.27f1\Editor\Data\Tools\RoslynScripts\unity_csc.bat /noconfig @Temp/UnityTempFile-db9376846218d88489985d66577300b2
+# Starting compiling Assembly-CSharp.dll
+C:\Program Files\Unity\Hub\Editor\2020.3.27f1\Editor\Data\Tools\RoslynScripts\unity_csc.bat /noconfig @Temp/UnityTempFile-15212d021346ba2408c85919dfbc7553

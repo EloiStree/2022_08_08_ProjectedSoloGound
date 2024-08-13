@@ -1,0 +1,66 @@
+// Each #kernel tells which function to compile; you can have many kernels
+#pragma kernel CSMain
+
+// Create a RenderTexture with enableRandomWrite flag and set it
+// with cs.SetTexture
+RWTexture2D<float4> Result;
+RWStructuredBuffer<float3> WorldPosition;
+RWStructuredBuffer<int> WorldPositionValide;
+
+ float3 m_rootPosition;
+ float4 m_rootRotation;
+ int m_width = 64;
+ float m_distanceHalfWidth = 1;
+ float m_distanceHalfHeight = 1;
+ float m_distancePerPixelWidth = 0.1;
+ float m_distancePerPixelHeight = 0.1;
+ float m_isColorPercent=0.8f;
+ float m_apparitionHeight = 1.0;
+ //Quaternion*Vector3
+ //Source:https://forum.unity.com/threads/compute-shader-how-can-i-do-quaternion-vector3.763421/
+ float4 qmul(float4 q1, float4 q2)
+ {
+     return float4(
+         q2.xyz * q1.w + q1.xyz * q2.w + cross(q1.xyz, q2.xyz),
+         q1.w * q2.w - dot(q1.xyz, q2.xyz)
+         );
+ }
+
+ // Vector rotation with a quaternion
+ // http://mathworld.wolfram.com/Quaternion.html
+ float3 rotate_vector(float3 v, float4 r)
+ {
+     float4 r_c = r * float4(-1, -1, -1, 1);
+     return qmul(r, qmul(float4(v, 0), r_c)).xyz;
+ }
+
+[numthreads(16,16,1)]
+void CSMain (uint3 id : SV_DispatchThreadID)
+{
+    int index = id.x + id.y * m_width;
+    bool valide = Result[id.xy].x >= m_isColorPercent ||
+        Result[id.xy].y >= m_isColorPercent ||
+        Result[id.xy].z >= m_isColorPercent ||
+        Result[id.xy].w > 0.0;
+    WorldPositionValide[index] = valide?1:-1;
+    if (valide) {
+        // half pixel should be compute on cpu once ;
+        float x = m_distancePerPixelWidth / 2.0 + (id.x * m_distancePerPixelWidth) - m_distanceHalfWidth;
+        float y = m_distancePerPixelHeight / 2.0 + (id.y * m_distancePerPixelHeight) - m_distanceHalfHeight;
+        float3 v = float3(x, m_apparitionHeight, y);
+        WorldPosition[index] = rotate_vector(v,m_rootRotation ) + m_rootPosition;
+       // public static void GetLocalToWorld_Point(in Vector3 localPosition, in Vector3 positionReference, in Quaternion rotationReference, out Vector3 worldPosition) = >
+       //    worldPosition = (rotationReference * localPosition) + (positionReference);
+    }
+    else {
+        WorldPosition[index] = float3(0, 0, 0);
+        return;
+    }
+
+}
+
+
+
+
+
+

@@ -1,0 +1,36 @@
+{
+    "m_useLicenseEndingAt": true,
+    "m_licenseFinishAtDate": {
+        "m_finishDate": {
+            "m_year": 2022,
+            "m_month_1_12": 6,
+            "m_day_1_31": 31,
+            "m_hour_0_23": 15,
+            "m_minute_0_59": 38,
+            "m_second_0_59": 5
+        }
+    },
+    "m_useLicenseRangeFromToDate": true,
+    "m_licenseFromToDate": {
+        "m_valideFrom": {
+            "m_year": 2022,
+            "m_month_1_12": 5,
+            "m_day_1_31": 30,
+            "m_hour_0_23": 15,
+            "m_minute_0_59": 33,
+            "m_second_0_59": 5
+        },
+        "m_valideTo": {
+            "m_year": 2022,
+            "m_month_1_12": 6,
+            "m_day_1_31": 1,
+            "m_hour_0_23": 15,
+            "m_minute_0_59": 38,
+            "m_second_0_59": 5
+        }
+    },
+    "m_useLicensePerExpiration": false,
+    "m_licenseExpirationDayFromFirstLaunchInDay": 0.01,
+    "m_useLicensePerUseTime": false,
+    "m_licenseExpirationFromUseTimeInDay": 0.0034722222222222226
+}

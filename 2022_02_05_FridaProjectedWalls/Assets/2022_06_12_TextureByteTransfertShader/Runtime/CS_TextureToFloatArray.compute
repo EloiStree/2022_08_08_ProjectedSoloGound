@@ -1,0 +1,31 @@
+// Each #kernel tells which function to compile; you can have many kernels
+#pragma kernel CSMain
+
+RWTexture2D<float4> Result;
+//RWStructuredBuffer<int> Index1D;
+RWStructuredBuffer<float> TextureAsFloat;
+
+//Should be remove when I will understand how not to use 16x16 thread on 256 but 8x8 fo Nxn
+//RWTexture2D<float4> DebugReturn;
+int m_width;
+
+
+[numthreads(16, 16, 1)]
+void CSMain(uint3 id : SV_DispatchThreadID)
+{
+    int indexInner = (id.x + m_width * id.y)*4;
+  //  int index = (Index1D[id.xy]) * 4;
+
+    TextureAsFloat[indexInner] = Result[id.xy].x;
+    TextureAsFloat[indexInner + 1] = Result[id.xy].y;
+    TextureAsFloat[indexInner + 2] = Result[id.xy].z;
+    TextureAsFloat[indexInner + 3] = Result[id.xy].w;
+
+   /* DebugReturn[id.xy] = float4(
+        TextureAsFloat[indexInner],
+        TextureAsFloat[indexInner + 1],
+        TextureAsFloat[indexInner + 2],
+        TextureAsFloat[indexInner + 3]
+        );
+   */
+}

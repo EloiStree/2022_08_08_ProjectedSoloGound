@@ -1,0 +1,31 @@
+//Try to import the kinect information from memory
+usekinectplayzoneimport:false
+//Try to import the kinect information from udp message
+usekinectudpimport:True
+
+//Listen to kinect export port
+kinectudpporttolisten:11005
+
+//Display the kinect point cloud that is imported over the scene to debug
+usedebugkinectpointcloudtexture:True
+
+//Display the kinect point cloud that is imported over the scene to debug
+usedebugkinecttailpath:True
+
+//If you want you can have the ground wih transparency   0-1
+groundalphapercent:1
+
+//what is the depth, length of the ground zone the player can play from back to forward MM
+grounddepthmm:950
+
+//what is the wall width from left to right MM
+groundwidthmm:1780
+
+//what is the resolution width of the screen for the ground PIXEL
+groundwidthresolution:1600
+
+//On what screen index do you want the ground to be. (0 1 2)
+groundscreenindex:0
+
+//Color of the ground background 0-255 r:g:b
+groundbackgroundcolor:255:255:255:255

@@ -1,0 +1,72 @@
+{
+    "m_categorySetup": [
+        {
+            "m_use": true,
+            "m_folderCategoryName": "Default",
+            "m_numberToGenerate": 100,
+            "m_minSizeMm": 100.0,
+            "m_maxSizeMm": 400.0,
+            "m_minSpeedMm": 10.0,
+            "m_maxSpeedMm": 100.0,
+            "m_negativeRotationDegree": -90.0,
+            "m_posifiveRotationDegree": 90.0,
+            "m_emitAtStart": 2,
+            "m_emitPerSeconds": 2.0,
+            "m_gridX": 2,
+            "m_gridY": 2,
+            "m_lifeTimeSecond": 4.0,
+            "m_lifeTimeShorten": 1.0
+        },
+        {
+            "m_use": true,
+            "m_folderCategoryName": "Small",
+            "m_numberToGenerate": 200,
+            "m_minSizeMm": 50.0,
+            "m_maxSizeMm": 200.0,
+            "m_minSpeedMm": 10.0,
+            "m_maxSpeedMm": 100.0,
+            "m_negativeRotationDegree": -90.0,
+            "m_posifiveRotationDegree": 90.0,
+            "m_emitAtStart": 2,
+            "m_emitPerSeconds": 2.0,
+            "m_gridX": 2,
+            "m_gridY": 2,
+            "m_lifeTimeSecond": 4.0,
+            "m_lifeTimeShorten": 1.0
+        },
+        {
+            "m_use": true,
+            "m_folderCategoryName": "Medium",
+            "m_numberToGenerate": 100,
+            "m_minSizeMm": 200.0,
+            "m_maxSizeMm": 400.0,
+            "m_minSpeedMm": 10.0,
+            "m_maxSpeedMm": 100.0,
+            "m_negativeRotationDegree": -90.0,
+            "m_posifiveRotationDegree": 90.0,
+            "m_emitAtStart": 2,
+            "m_emitPerSeconds": 2.0,
+            "m_gridX": 2,
+            "m_gridY": 2,
+            "m_lifeTimeSecond": 4.0,
+            "m_lifeTimeShorten": 1.0
+        },
+        {
+            "m_use": true,
+            "m_folderCategoryName": "Big",
+            "m_numberToGenerate": 100,
+            "m_minSizeMm": 400.0,
+            "m_maxSizeMm": 800.0,
+            "m_minSpeedMm": 10.0,
+            "m_maxSpeedMm": 100.0,
+            "m_negativeRotationDegree": -90.0,
+            "m_posifiveRotationDegree": 90.0,
+            "m_emitAtStart": 2,
+            "m_emitPerSeconds": 2.0,
+            "m_gridX": 2,
+            "m_gridY": 2,
+            "m_lifeTimeSecond": 4.0,
+            "m_lifeTimeShorten": 1.0
+        }
+    ]
+}

@@ -1,0 +1,6 @@
+importimagepath:C:\Users\moi\Desktop\ActiveMe\2022_02_05_FridaKinectToWalls\2022_02_05_FridaKinectToWalls\PlayZone\PlayZoneTexturePoint.png
+usefileexport:false
+usememoryexport:true
+useudpexport:true
+kinectexportimagewidth:256
+kinectexportimageheight:256

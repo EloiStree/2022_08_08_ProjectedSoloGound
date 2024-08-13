@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Unstored/Scene/VersionWithOnlyCloudToTexture.unity
+    guid: 13ca9a69d56f3a34eb0cea2f460106f9
+  - enabled: 1
+    path: Assets/2022_05_03_KinectV2ToExport/MeshToWorkingZone.unity
+    guid: ba7ac6fdb173e26448da0b780386b41f
+  - enabled: 1
+    path: Assets/2022_05_03_KinectV2ToExport/Scene/ReadTexturePlayZoneExample.unity
+    guid: 06e481e0e272d664490c7ea2755b19fb
+  - enabled: 1
+    path: Assets/2022_05_03_KinectV2ToExport/ExportImport Demo Kinect Head from cloud
+      point.unity
+    guid: 2c72203ab339dd14aa29fc9dcfc5dd78
+  - enabled: 1
+    path: Assets/K2Examples/KinectDemos/VisualizerDemo/KinectSceneVisualizer.unity
+    guid: 523b4192f5644f84b8164e19e8be58e1
+  m_configObjects: {}

@@ -1,0 +1,82 @@
+// Each #kernel tells which function to compile; you can have many kernels
+#pragma kernel CSMain
+
+RWTexture2D<float4> Memory;
+RWTexture2D<float4> DebugColor;
+float m_toRemove;
+int m_width;
+int m_height;
+float m_globalRatio;
+float m_fadeRatio1White;
+float m_fadeRatio3White;
+float m_fadeRatio6White;
+float m_fadeRatio7White;
+float m_fadeRatioMostlyWhite;
+float m_fadeRatioContinulsy;
+
+ uint IndexOf(uint2 coord) { 
+     return (coord.y * m_width) + coord.x;
+ }
+
+bool IsWhite(float4 color) {
+    return color.x > 0.00f || color.y > 0.00f || color.z > 0.00f;
+}
+void Remove(uint3 index, float remove) {
+    Memory[(index.xy)] = float4 (
+        Memory[(index.xy)].x - (remove* m_globalRatio),
+        Memory[(index.xy)].y - (remove * m_globalRatio),
+        Memory[(index.xy)].z - (remove * m_globalRatio),
+        Memory[(index.xy)].w - (remove * m_globalRatio));
+
+    if (Memory[(index.xy)].x < 0) {
+        Memory[(index.xy)] = float4(0, 0, 0, 0);
+    }
+}
+
+[numthreads(16, 16, 1)]
+void CSMain(uint3 id : SV_DispatchThreadID)
+{
+    if (IsWhite(Memory[id.xy])) {
+
+        uint3 idTemp = uint3(0,0,0);/*
+        int y = id.x / int(m_width);
+        int x = id.x % int(m_width);*/  
+        int tx = 0; int ty = 0;
+        float whiteNearCount = 0;
+        for (int ix = -1; ix <= 1; ix++)
+        {
+            for (int iy = -1; iy <= 1; iy++)
+            {
+                idTemp.x = id.x + ix;
+                idTemp.y = id.y + iy;
+                if (IsWhite(Memory[idTemp.xy]))
+                    whiteNearCount += 1;
+            }
+        }
+        float color = whiteNearCount / 9.0;
+        DebugColor[id.xy] = float4(color, color, color, 1);
+
+        if (whiteNearCount < 1) {
+            Remove(id, m_toRemove * m_fadeRatio1White);
+        }
+        else if (whiteNearCount < 3) {
+            Remove(id, m_toRemove * m_fadeRatio3White);
+        }
+        else if (whiteNearCount < 6) {
+            Remove(id, m_toRemove* m_fadeRatio6White);
+        }
+        else if (whiteNearCount < 8) {
+            Remove(id, m_toRemove * m_fadeRatio7White);
+        }
+        else if (whiteNearCount >= 8) {
+            Remove(id, m_toRemove * m_fadeRatioMostlyWhite);
+        }
+        /*else {
+            Remove(id, m_toRemove * 0.1);
+        }*/
+        Remove(id, m_toRemove * m_fadeRatioContinulsy);
+
+
+
+    }
+}

@@ -1,0 +1,18 @@
+Hello and welcome.
+
+This package is just a drag and drop prefab (gameobject & canvas version) that allows you to check that your game is over 60fps.
+It can be a bit configurated in Jimmy Screamer script.
+
+But the idea is that between 60-42 FPS a first audio is trigger and the volume is going up.
+Between 40 and 2 FPS you can set up an annoying sound because you game should never be under 40 fps.
+
+Feel free to download your own sound and replace the default one.
+
+I am contactable on Discord and Github:
+- https://github.com/EloiStree
+- https://eloistree.page.link/discord
+
+Hope your enjoy the tool.
+
+Kind regards,
+Eloi

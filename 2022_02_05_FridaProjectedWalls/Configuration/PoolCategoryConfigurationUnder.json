@@ -1,0 +1,69 @@
+{
+  "m_categorySetup": [
+
+    {
+      "m_use": true,
+      "m_folderCategoryName": "Small1x1",
+      "m_numberToGenerate": 200,
+      "m_minSizeMm": 30.0,
+      "m_maxSizeMm": 180.0,
+      "m_minSpeedMm": 100.0,
+      "m_maxSpeedMm": 1000.0,
+      "m_negativeRotationDegree": -90.0,
+      "m_posifiveRotationDegree": 90.0,
+      "m_emitPerSeconds": 2.0,
+      "m_gridX": 1,
+      "m_gridY": 1,
+      "m_lifeTimeSecond": 4.0,
+      "m_lifeTimeShorten": 1.4
+    },
+    {
+      "m_use": true,
+      "m_folderCategoryName": "Big1x1",
+      "m_numberToGenerate": 100,
+      "m_minSizeMm": 30.0,
+      "m_maxSizeMm": 180.0,
+      "m_minSpeedMm": 100.0,
+      "m_maxSpeedMm": 1000.0,
+      "m_negativeRotationDegree": -90.0,
+      "m_posifiveRotationDegree": 90.0,
+      "m_emitPerSeconds": 2.0,
+      "m_gridX": 1,
+      "m_gridY": 1,
+      "m_lifeTimeSecond": 4.0,
+      "m_lifeTimeShorten": 1.4
+    },
+    {
+      "m_use": true,
+      "m_folderCategoryName": "Small2x2",
+      "m_numberToGenerate": 200,
+      "m_minSizeMm": 30.0,
+      "m_maxSizeMm": 180.0,
+      "m_minSpeedMm": 100.0,
+      "m_maxSpeedMm": 1000.0,
+      "m_negativeRotationDegree": -90.0,
+      "m_posifiveRotationDegree": 90.0,
+      "m_emitPerSeconds": 2.0,
+      "m_gridX": 2,
+      "m_gridY": 2,
+      "m_lifeTimeSecond": 4.0,
+      "m_lifeTimeShorten": 1.4
+    },
+    {
+      "m_use": true,
+      "m_folderCategoryName": "Big2x2",
+      "m_numberToGenerate": 100,
+      "m_minSizeMm": 30.0,
+      "m_maxSizeMm": 180.0,
+      "m_minSpeedMm": 100.0,
+      "m_maxSpeedMm": 1000.0,
+      "m_negativeRotationDegree": -90.0,
+      "m_posifiveRotationDegree": 90.0,
+      "m_emitPerSeconds": 2.0,
+      "m_gridX": 2,
+      "m_gridY": 2,
+      "m_lifeTimeSecond": 4.0,
+      "m_lifeTimeShorten": 1.4
+    }
+  ]
+}

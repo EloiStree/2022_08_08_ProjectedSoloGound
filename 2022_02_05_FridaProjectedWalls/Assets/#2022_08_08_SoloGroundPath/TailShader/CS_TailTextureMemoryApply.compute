@@ -1,0 +1,14 @@
+// Each #kernel tells which function to compile; you can have many kernels
+#pragma kernel CSMain
+
+RWTexture2D<float4> ToPush;
+RWTexture2D<float4> Memory;
+float m_isWhite;
+
+[numthreads(16, 16, 1)]
+void CSMain(uint3 id : SV_DispatchThreadID)
+{
+    if (ToPush[id.xy].x > m_isWhite && ToPush[id.xy].y > m_isWhite && ToPush[id.xy].z > m_isWhite && ToPush[id.xy].w > 0) {
+        Memory[id.xy] = ToPush[id.xy];
+    }
+}

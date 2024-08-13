@@ -1,0 +1,44 @@
+// Each #kernel tells which function to compile; you can have many kernels
+#pragma kernel CSMain
+
+// Create a RenderTexture with enableRandomWrite flag and set it
+// with cs.SetTexture
+RWTexture2D<float4> Result;
+int m_border;
+int m_height;
+int m_width;
+int m_minNeighbour;
+float m_percentToBeWhite;
+float4 m_colorToReplaceWith;
+
+int GetIndexOf(int x, int y) {
+    return y * m_width + x;
+}
+
+[numthreads(8,8,1)]
+void CSMain (uint3 id : SV_DispatchThreadID)
+{
+    int x = id.x;
+    int y = id.y;
+    
+    int count=0;
+    for (int i = x - m_border; i < x + m_border; i++)
+    {
+        for (int j = y - m_border; j < y + m_border; j++)
+        {
+            if (i == x && j == y) {}
+            else if (i < 0 || i >= m_width) {}
+            else if (j < 0 || j >= m_height) {}
+            else {
+                int2 idIndex =  int2(i, j);
+                if (Result[idIndex].x  > m_percentToBeWhite)
+                {
+                    count++;
+                    if(count >= m_minNeighbour)
+                        return;
+                }
+            }
+        }
+    }
+    Result[id.xy] = m_colorToReplaceWith;
+}

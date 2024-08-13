@@ -1,0 +1,61 @@
+
+#pragma kernel CSMain
+RWTexture2D<float4> Result;
+RWStructuredBuffer<float3> m_worldPoint;
+float4 m_systemRotation;
+float3 m_systemPosition;
+int m_width;
+int m_height;
+float m_widthSize;
+float m_heightSize;
+
+//Quaternion*Vector3
+//Source:https://forum.unity.com/threads/compute-shader-how-can-i-do-quaternion-vector3.763421/
+float4 qmul(float4 q1, float4 q2)
+{
+    return float4(
+        q2.xyz * q1.w + q1.xyz * q2.w + cross(q1.xyz, q2.xyz),
+        q1.w * q2.w - dot(q1.xyz, q2.xyz)
+        );
+}
+
+// Vector rotation with a quaternion
+// http://mathworld.wolfram.com/Quaternion.html
+float3 rotate_vector(float3 v, float4 r)
+{
+    float4 r_c = r * float4(-1, -1, -1, 1);
+    return qmul(r, qmul(float4(v, 0), r_c)).xyz;
+}
+
+float3 relocate(float3 localPoint) {
+    //    public static void GetWorldToLocal_Point(in Vector3 worldPosition, in Vector3 positionReference, in Quaternion rotationReference, out Vector3 localPosition) = >
+    //        localPosition = Quaternion.Inverse(rotationReference) * (worldPosition - positionReference);
+    return rotate_vector(localPoint , m_systemRotation) + m_systemPosition;
+    //  return (wp - m_systemPosition);
+}
+
+[numthreads(8, 8, 1)]
+void CSMain(uint3 id : SV_DispatchThreadID)
+{
+    int index = id.x + id.y * m_width;
+    if (Result[id.xy].x < 0.5)
+    {
+        m_worldPoint[index] = float3(0, 0, 0);
+        return;
+    }
+
+    m_worldPoint[index] = relocate(float3(m_widthSize * (id.x/(float) m_width) - m_widthSize * 0.5f, 0, m_heightSize*( id.y /(float) m_height)- m_heightSize*0.5f));
+
+    /*
+    int idx = id.x;
+
+     m_localPoint[id.x] =
+        relocate(m_worldPoint[id.x]);*/
+}
+//[numthreads(8,8,1)]
+//void CSMain (uint3 id : SV_DispatchThreadID)
+//{
+//    // TODO: insert actual code here!
+//
+//    Result[id.xy] = float4(id.x & id.y, (id.x & 15)/15.0, (id.y & 15)/15.0, 0.0);
+//}

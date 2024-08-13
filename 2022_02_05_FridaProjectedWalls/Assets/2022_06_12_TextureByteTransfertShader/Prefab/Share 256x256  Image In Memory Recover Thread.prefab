@@ -1,0 +1,341 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6889587774419362702
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6889587774419362700}
+  - component: {fileID: 6889587774419362703}
+  m_Layer: 0
+  m_Name: Share 256x256  Image In Memory Recover Thread
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6889587774419362700
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6889587774419362702}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 230.9169, y: 267.42175, z: -114.15228}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 6889587774558853754}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6889587774419362703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6889587774419362702}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0855bee012afcba4cad34750df718959, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_size: 256
+  m_renderTextureOut: {fileID: 0}
+  m_convertShader: {fileID: 7200000, guid: 76337f6baf3a21342b398580c9b6f251, type: 3}
+  m_width: 0
+  m_height: 0
+  m_lenght: 0
+  m_numberOfFloat: 0
+  m_numberOfBytes: 0
+  m_bytesReceived: 0
+  m_floatReceived: 0
+  m_debugFloat:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  m_debugByte:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  m_byteToFloat: 0
+  m_floatToTexture: 0
+  m_updatedTexture:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: UIRawImageWithRatioMono, be.eloistree.generaltoolbox
+        m_MethodName: ApplyTexture
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!1001 &3306220468645072996
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6889587774419362700}
+    m_Modifications:
+    - target: {fileID: 8250232141452102168, guid: d5691317b872d4e4485b76164b1bcd58, type: 3}
+      propertyPath: m_recoveredOnUnityThread.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 6889587774419362703}
+    - target: {fileID: 8250232141452102171, guid: d5691317b872d4e4485b76164b1bcd58, type: 3}
+      propertyPath: m_Name
+      value: Share 256x256  Image In Memory Recover
+      objectReference: {fileID: 0}
+    - target: {fileID: 8250232141452102174, guid: d5691317b872d4e4485b76164b1bcd58, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8250232141452102174, guid: d5691317b872d4e4485b76164b1bcd58, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 118.532684
+      objectReference: {fileID: 0}
+    - target: {fileID: 8250232141452102174, guid: d5691317b872d4e4485b76164b1bcd58, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -21.6745
+      objectReference: {fileID: 0}
+    - target: {fileID: 8250232141452102174, guid: d5691317b872d4e4485b76164b1bcd58, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 20.545166
+      objectReference: {fileID: 0}
+    - target: {fileID: 8250232141452102174, guid: d5691317b872d4e4485b76164b1bcd58, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8250232141452102174, guid: d5691317b872d4e4485b76164b1bcd58, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8250232141452102174, guid: d5691317b872d4e4485b76164b1bcd58, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8250232141452102174, guid: d5691317b872d4e4485b76164b1bcd58, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8250232141452102174, guid: d5691317b872d4e4485b76164b1bcd58, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8250232141452102174, guid: d5691317b872d4e4485b76164b1bcd58, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8250232141452102174, guid: d5691317b872d4e4485b76164b1bcd58, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d5691317b872d4e4485b76164b1bcd58, type: 3}
+--- !u!4 &6889587774558853754 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8250232141452102174, guid: d5691317b872d4e4485b76164b1bcd58, type: 3}
+  m_PrefabInstance: {fileID: 3306220468645072996}
+  m_PrefabAsset: {fileID: 0}

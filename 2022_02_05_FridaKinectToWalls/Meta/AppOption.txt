@@ -1,0 +1,3 @@
+importimagepath:
+usefileexport:true
+usememoryexport:true
